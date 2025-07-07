@@ -48,7 +48,7 @@ This repository logs all my weekly activities, tools explored, tasks completed, 
 
 ## 🔗 Connect with Me
 
-- 💼 [LinkedIn](https://linkedin.com/in/Ayan Irfan)
+- 💼 LinkedIn : https://linkedin.com/in/Ayan_Irfan
 - 📧 Email: nnm23cb012@nmamit.in
 
 ---
