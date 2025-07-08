@@ -52,21 +52,21 @@ Exploit a vulnerable file upload feature to gain shell access to the server.
 3. Switch Burp Intercept **ON**.
 4. **Upload the file** → Burp intercepts the request.
 5. In Burp, change:  
-        ```**filename="shell.php.png"**```  
-       ``` **Content-Type: image/png**```  
+        ```filename="shell.php.png"```  
+       ```Content-Type: image/png```   
    to:   
-        ```**filename="shell.php"**```  
-       ``` **Content-Type: application/x-php**```  
+        ```filename="shell.php"```  
+       ``` Content-Type: application/x-php```  
 6. **Forward the request** → Server accepts it.
 7. **Access the file** via URL (e.g., ```/uploads/shell.php```) and use ```?cmd=ls```.
 
 ### 🔍 Wappalyzer Extension
 Wappalyzer is a browser extension used to identify backend and frontend tech stack such as:
 
-1. Languages (PHP, Python, Ruby)
-2. Web servers (Apache, Nginx)
-3. Frameworks (Laravel, Django)
-4. CMS (WordPress, Joomla)
+- Languages (PHP, Python, Ruby)
+-  Web servers (Apache, Nginx)
+- Frameworks (Laravel, Django)
+- CMS (WordPress, Joomla)
 
 > 💡 **Note**:You can also analyze backend headers via Burp Repeater or server error messages.
 ---
@@ -81,7 +81,7 @@ The CTF involved exploiting 3 vulnerabilities:
     Password: (blank)
     This bypasses login logic and logs you in as admin.
 
-2️⃣ Security Misconfiguration
+2️⃣ **Security Misconfiguration**
 
     Inspecting HTML revealed hardcoded credentials:
     <!-- Admin Username: administrator -->
@@ -89,7 +89,7 @@ The CTF involved exploiting 3 vulnerabilities:
     <!-- Admin URL: /admin -->  
     Used them to login into admin panel.
 
-3️⃣ LFI Attack (Local File Inclusion)
+3️⃣ **LFI Attack (Local File Inclusion)**
 
     Input field in admin panel was vulnerable:
     ?q=flag.txt
