@@ -77,23 +77,23 @@ The CTF involved exploiting 3 vulnerabilities:
 1️⃣ **SQL Injection (Authentication Bypass)**
 
     Used SQLi payload on login page:
-		Username: admin'--
+    Username: admin'--
     Password: (blank)
-		This bypasses login logic and logs you in as admin.
+    This bypasses login logic and logs you in as admin.
 
 2️⃣ Security Misconfiguration
 
     Inspecting HTML revealed hardcoded credentials:
-	 	<!-- Admin Username: administrator -->
+    <!-- Admin Username: administrator -->
     <!-- Admin Password: AdminPass2024 -->
     <!-- Admin URL: /admin -->  
-		Used them to login into admin panel.
+    Used them to login into admin panel.
 
 3️⃣ LFI Attack (Local File Inclusion)
 
     Input field in admin panel was vulnerable:
     ?q=flag.txt
-	  Retrieved flag from flag.txt
+    Retrieved flag from flag.txt
 
 🏁 **Final Flag:**
 ```CTF{sql_injection_and_lfi_chain_complete}```
