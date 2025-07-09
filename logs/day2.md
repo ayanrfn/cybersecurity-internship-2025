@@ -59,7 +59,7 @@ Exploit a vulnerable file upload feature to gain shell access to the server.
        ``` Content-Type: application/x-php```  
 6. **Forward the request** → Server accepts it.
 7. **Access the file** via URL (e.g., ```/uploads/shell.php```) and use ```?cmd=ls```.
-
+![Burp suite malware attack](https://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/burp2.jpg](http://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/burpsuit.jpg)
 ![Burp suite malware attack](https://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/burp2.jpg)
 ### 🔍 Wappalyzer Extension
 Wappalyzer is a browser extension used to identify backend and frontend tech stack such as:
@@ -82,6 +82,8 @@ The CTF involved exploiting 3 vulnerabilities:
     Password: (blank)
     This bypasses login logic and logs you in as admin.
 
+![SQL_ctf](https://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/ctf4.jpg)
+
 2️⃣ **Security Misconfiguration**
 
     Inspecting HTML revealed hardcoded credentials:
@@ -90,16 +92,18 @@ The CTF involved exploiting 3 vulnerabilities:
     <!-- Admin URL: /admin -->  
     Used them to login into admin panel.
 
+![SQL_ctf](https://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/ctf3.jpg)
 3️⃣ **LFI Attack (Local File Inclusion)**
 
     Input field in admin panel was vulnerable:
     ?q=flag.txt
     Retrieved flag from flag.txt
 
+![SQL_ctf](https://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/ctf1.jpg)
 🏁 **Final Flag:**
 ```CTF{sql_injection_and_lfi_chain_complete}```
 
-
+![SQL_ctf]([https://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/ctf1.jpg](https://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/ctf2.jpg))
 
 
 		
