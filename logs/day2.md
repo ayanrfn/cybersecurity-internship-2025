@@ -60,7 +60,7 @@ Exploit a vulnerable file upload feature to gain shell access to the server.
 6. **Forward the request** → Server accepts it.
 7. **Access the file** via URL (e.g., ```/uploads/shell.php```) and use ```?cmd=ls```.
 
-![Burp suite malware attack](day2img/burp2.jpg)
+![Burp suite malware attack](https://github.com/ayanrfn/cybersecurity-internship-2025/blob/main/day2img/burp2.jpg)
 ### 🔍 Wappalyzer Extension
 Wappalyzer is a browser extension used to identify backend and frontend tech stack such as:
 
